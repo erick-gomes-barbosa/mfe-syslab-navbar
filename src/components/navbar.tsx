@@ -3,7 +3,7 @@ import LogoHorizontal from "../assets/images/logo-horizontal.png";
 
 const commonRoutes = [
   {
-    path: "/home",
+    path: `${localStorage.getItem("isAdmin") === "true" ? "/admin" : "/home"}`,
     label: "Laboratórios",
   },
   {
